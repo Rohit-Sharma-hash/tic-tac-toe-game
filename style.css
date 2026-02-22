@@ -1,0 +1,122 @@
+*{
+    margin: 0;  
+    padding: 0;
+}
+h1{
+    color: rgb(4, 34, 255);
+    background-color: rgb(11, 193, 193);
+    font-size: 6rem;
+    margin-bottom: 2rem;
+    border: 1.5px solid rgb(30, 50, 197);
+    height: 100px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    box-shadow: 0 0 3rem rgba(5, 94, 95, 0.653);
+    margin: 20px auto;
+}
+
+body{
+    background-color: aqua;
+    text-align: center;
+}
+
+.container{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game{
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+.box{
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(5, 94, 95, 0.653);
+    font-size: 8vmin;
+    color: rgb(196, 30, 143);
+    cursor: pointer;
+    background-color:rgb(179, 247, 247);
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+#box1:hover {transform:scale(1.1);}
+#box2:hover {transform:scale(1.1);}
+#box3:hover {transform:scale(1.1);}
+#box4:hover {transform:scale(1.1);}
+#box5:hover {transform:scale(1.1);}   
+#box6:hover {transform:scale(1.1);}
+#box7:hover {transform:scale(1.1);}
+#box8:hover {transform:scale(1.1);}
+#box9:hover {transform:scale(1.1);}
+
+
+#reset-btn{
+    padding: 1rem;
+    font-size: 1.5rem;
+    background-color: rgb(12, 173, 202);
+    color: rgb(19, 15, 18);
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 1rem rgba(5, 94, 95, 0.653);
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+#reset-btn:hover{
+    transform: scale(1.1);
+}
+#new-btn{
+    padding: 1rem;
+    font-size: 1.5rem;
+    background-color: rgb(12, 173, 202);
+    color: rgb(19, 15, 18);
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 1rem rgba(5, 94, 95, 0.653);
+    cursor: pointer;
+    height: 50px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 1.5rem rgba(5, 94, 95, 0.653);
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    text-align: center;
+    margin: 0 auto;
+}
+#new-btn:hover{
+    transform: scale(1.1);
+}
+
+
+#msg{
+    color: red;
+    font-size: 8vmin;
+}
+.msg-container{
+    height: 30vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+.hide{
+    display: none;
+}

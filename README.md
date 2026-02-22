@@ -22,11 +22,4 @@ This project demonstrates core front-end concepts such as DOM manipulation, even
 - **CSS3** – Styling & animations
 - **JavaScript (ES6)** – Game logic & DOM manipulation
 
----
-
-## 📸 Preview
-
-
-
-## 📂 Project Structure
 

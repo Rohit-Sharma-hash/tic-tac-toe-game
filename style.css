@@ -5,11 +5,13 @@
 h1{
     color: rgb(4, 34, 255);
     background-color: rgb(11, 193, 193);
-    font-size: 6rem;
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    width: 90%;
+    max-width: 500px;
+    height: auto;
+    padding: 1rem;   
     margin-bottom: 2rem;
     border: 1.5px solid rgb(30, 50, 197);
-    height: 100px;
-    width: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,10 +19,23 @@ h1{
     box-shadow: 0 0 3rem rgba(5, 94, 95, 0.653);
     margin: 20px auto;
 }
-
 body{
+    background: linear-gradient(135deg, #E0F7FA, #B2EBF2);
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* body{
     background-color: aqua;
     text-align: center;
+} */
+
+main{
+    width: 100%;
+    max-width: 500px; /* controls PC width */
+    padding: 1rem;
 }
 
 .container{
@@ -30,8 +45,10 @@ body{
     align-items: center;
 }
 .game{
-    height: 60vmin;
-    width: 60vmin;
+    height: 90vmin;
+    width: 90vmin;
+    max-width: 400px;
+    max-height: 400px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -39,12 +56,13 @@ body{
     gap: 1.5vmin;
 }
 .box{
-    height: 18vmin;
-    width: 18vmin;
+
+    height: 28%;
+    width: 28%;
     border-radius: 1rem;
     border: none;
     box-shadow: 0 0 1rem rgba(5, 94, 95, 0.653);
-    font-size: 8vmin;
+    font-size: clamp(2rem, 8vmin, 3.5rem);
     color: rgb(196, 30, 143);
     cursor: pointer;
     background-color:rgb(179, 247, 247);
@@ -64,8 +82,10 @@ body{
 
 
 #reset-btn{
+    width: 80%;
+    max-width: 220px;
+    font-size: clamp(1rem, 4vw, 1.5rem);
     padding: 1rem;
-    font-size: 1.5rem;
     background-color: rgb(12, 173, 202);
     color: rgb(19, 15, 18);
     border: none;
@@ -86,10 +106,12 @@ body{
     color: rgb(19, 15, 18);
     border: none;
     border-radius: 0.5rem;
-    box-shadow: 0 0 1rem rgba(5, 94, 95, 0.653);
+    box-shadow: 0 0 1rem rgba(39, 54, 54, 0.653);
     cursor: pointer;
     height: 50px;
-    width: 200px;
+    width: 80%;
+    max-width: 220px;
+    font-size: clamp(1rem, 4vw, 1.5rem);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -119,4 +141,20 @@ body{
 }
 .hide{
     display: none;
+}
+
+/* Mobile Specific Tweaks:-*/
+
+@media (max-width: 480px) {
+    body{
+        padding: 10px;
+    }
+
+    .container{
+        height: auto;
+    }
+
+    .msg-container{
+        gap: 2rem;
+    }
 }

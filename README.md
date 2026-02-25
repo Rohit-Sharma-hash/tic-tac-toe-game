@@ -21,5 +21,20 @@ This project demonstrates core front-end concepts such as DOM manipulation, even
 - **HTML5** – Structure
 - **CSS3** – Styling & animations
 - **JavaScript (ES6)** – Game logic & DOM manipulation
+- 
+---
 
+## 🚀 Live Demo
 
+👉 [Play Tic Tac Toe Game](https://rohit-sharma-hash.github.io/tic-tac-toe-game/)
+
+---
+
+## 👨‍💻 Author
+
+**Rohit Sharma**  
+Beginner Web Developer | Learning Full-Stack Development  
+
+---
+
+⭐ If you like this project, don’t forget to star the repository!
